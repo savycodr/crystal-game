@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+
+
+<!-- Here we added a header which will hold the "number-to-guess" -->
+<h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
+<!-- We then wrapped our crystal image in an id "#crystals" -->
+<div id="crystals">
+
+        <!-- We gave our crystal image the class ".crystal-image" to apply the resize-->
+        <img class="crystal-image" src="assets/images/diamond-739156_640-crop.jpg" alt="crystals" data-crystalvalue="">
+        <img class="crystal-image" src="assets/images/diamonds-3183304_640-purple.png" alt="crystals" data-crystalvalue="">
+        <img class="crystal-image" src="assets/images/stones-498592_640-crop.jpg" alt="crystals" data-crystalvalue="">
+        <img class="crystal-image" src="assets/images/diamonds-3183304_640-yellow.png" alt="crystals" data-crystalvalue="">
+</div>
+
+<div>
+  <h1 id="count">Your Count Is At: 0</h1>
+</div>
+
+<div id="display">
+  <h1 id="wins">Wins: 0</h1>
+  <h1 id="losses">Losses: 0</h1>
+</div>
+
+ <!--  add a credit page-->
+ <a href="credit.html" target="_blanK" style="font-size: 10px; text-align: left; padding-left: 0px">Click here for credits</a>
+    
+<!-- Here we added a link to the jQuery library -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>

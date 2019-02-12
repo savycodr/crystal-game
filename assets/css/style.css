@@ -1,0 +1,126 @@
+
+/* Below we added some simple CSS to resize our images */
+.crystal-image {
+    width: 150px;
+    height: auto;
+  }
+
+  /* You use `980px` because you never want any of the content to be cut off. Since the desktop layout is about 960px wide, you want the media queries to kick in before your content gets cut off.
+
+ `768px` is about the width of a tablet and `640px` is about the width of a phone in landscape. */
+
+/* Width at 980px and below */
+@media screen and (max-width: 980px) {
+    
+    body {
+      background-color: yellow;
+    }
+    
+    /*
+    #menus{
+        width: 100%;
+        margin:auto;
+      }
+
+      #namebox{
+          margin-left: 10px;
+      }
+
+    .content{
+        width: 100%;
+        margin:auto;
+    }
+
+    .floatlink{
+        padding-right: 10px;
+     }
+
+    #pattern{
+        padding: 0px 10px 80px 10px;
+    }
+    */
+}
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px) {
+    
+    body {
+      background-color: brown;
+    }
+    /*
+      #menus{
+        width: 100%;
+        margin:auto;
+      }
+      .content{
+          width: 100%;
+          margin:auto;
+      }
+      .floatlink{
+        padding-right: 20px;
+     }
+     */
+}
+
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+    
+    body {
+      background-color: cyan;
+     
+    }
+   
+/*
+    header{
+        position: static;
+    }
+
+    #menus{
+        width: 100%;
+        margin:auto;
+    }
+
+    h1 {
+        width: 100%;
+        margin:auto;
+    }
+
+    #namebox{
+        float: none;
+        margin-left: 0px;
+    }
+
+    .floatlink{
+        float: none;
+        margin: auto;
+        width: 100%;
+     }
+
+    .content{
+        width: 100%;
+        margin:auto;
+        padding: 10px 10px 70px 10px;
+    }
+
+    #bioimage{
+        width: 100%;
+        height:auto;
+        margin:auto;
+        float: none;
+        padding-right: 20px;
+    }
+
+    .imgcontainer{
+        width: auto;
+        height:100%;
+        margin: 20px auto 20px auto;
+        float: none;
+    }
+ */
+    /* because I no longer want two items per row */
+    /*
+    .imgcontainer:nth-child(even) {
+        margin-right: auto;
+    }
+    */
+}
