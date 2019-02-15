@@ -9,6 +9,7 @@
 <body>
 
 <div id="pattern">
+ 
 <!-- Here we added a header which will hold the "number-to-guess" -->
 <h1>Number to Guess: <span id="number-to-guess"></span></h1>
 
@@ -16,10 +17,12 @@
 <div id="crystals">
 
         <!-- We gave our crystal image the class ".crystal-image" to apply the resize-->
+        <!-- The last two images have a class mediaDiv to add padding-top for media responsiveness-->
         <img class="crystal-image" src="assets/images/diamond-739156_640-crop.jpg" alt="crystals" data-crystalvalue="">
         <img class="crystal-image" src="assets/images/diamonds-3183304_640-purple.png" alt="crystals" data-crystalvalue="">
-        <img class="crystal-image" src="assets/images/stones-498592_640-crop.jpg" alt="crystals" data-crystalvalue="">
-        <img class="crystal-image" src="assets/images/diamonds-3183304_640-yellow.png" alt="crystals" data-crystalvalue="">
+        <img class="crystal-image mediaDiv" src="assets/images/stones-498592_640-crop.jpg" alt="crystals" data-crystalvalue="">
+        <img class="crystal-image mediaDiv" src="assets/images/diamonds-3183304_640-yellow.png" alt="crystals" 
+        data-crystalvalue="">
 </div>
 
 <div>
@@ -31,8 +34,17 @@
   <h1 id="losses">Losses: 0</h1>
 </div>
 
+ <!-- add a box with directions-->
+ <div id="directions"> 
+  <p>Welcome to the Crystal Game</p>
+  <ul>
+    <li>The <strong>Number to Guess</strong> is your target. Get your count to match that number without going over.</li>
+    <li>Each crystal is worth a random value. Clicking on a crystal will increase your count by that value.</li>
+  </ul>
+ </div>
+
  <!--  add a credit page-->
- <a href="credit.html" target="_blanK" style="font-size: 10px; text-align: left; padding-left: 0px">Click here for credits</a>
+ <a href="credit.html" target="_blanK" >Click here for credits</a>
 </div> <!--end of pattern wrapper div-->
     
 <!-- Here we added a link to the jQuery library -->

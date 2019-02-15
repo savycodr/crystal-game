@@ -1,18 +1,22 @@
-// Here we keep track of wins
-var numWins = 0;
-// Here we keep track of losses
-var numLosses = 0;
 
-// target number is a random number between 19-120
-var targetNumber = Math.floor((Math.random() * (120-19)) + 19);
+$(document).ready(function() 
+{
 
-// Here we set the "number-to-guess" header to match the "targetNumber".
-$("#number-to-guess").text(targetNumber);
+  // Here we keep track of wins
+  var numWins = 0;
+  // Here we keep track of losses
+  var numLosses = 0;
 
-// Here we created a counter, we'll be using this to track the user's total.
-var counter = 0;
+  // target number is a random number between 19-120
+  var targetNumber = Math.floor((Math.random() * (120-19)) + 19);
 
-$(".crystal-image").on("click", function() {
+  // Here we set the "number-to-guess" header to match the "targetNumber".
+  $("#number-to-guess").text(targetNumber);
+
+  // Here we created a counter, we'll be using this to track the user's total.
+  var counter = 0;
+
+  $(".crystal-image").on("click", function() {
 
     // get the data-crystalvalue attribute for the clicked image
     var crystalValue = $(this).attr("data-crystalvalue");
@@ -26,13 +30,11 @@ $(".crystal-image").on("click", function() {
       $(this).attr("data-crystalvalue", crystalValue);
     }
 
-
     // We'll then increment the counter each time by the randomly selected number.
     // If the number is 11, then users can win. (11 + 11 + 11 + 11 + 11 = 55)
     // If the number is 10, then there is no way for the user to win. (10 + 10 + 10 + 10 + 10 = 60)
     counter += parseInt(crystalValue);
     $("#count").html("Your Count Is At: " + counter);
-
 
     // Here we created some logic to "check" if the click counter matches the targetNumber.
     // Remember, this click event will be triggered with each click.
@@ -53,23 +55,23 @@ $(".crystal-image").on("click", function() {
         clearValues();
     }
 
-  });
+   });
 
-// Clear the items for a new game
-function clearValues()
-{
-  // reset the target number
-  // target number is a random number between 19-120
-  targetNumber = Math.floor((Math.random() * (120-19)) + 19);
-  // Here we set the "number-to-guess" header to match the "targetNumber".
-  $("#number-to-guess").text(targetNumber);
+  // Clear the items for a new game
+  function clearValues()
+  {
+    // reset the target number
+    // target number is a random number between 19-120
+    targetNumber = Math.floor((Math.random() * (120-19)) + 19);
+    // Here we set the "number-to-guess" header to match the "targetNumber".
+    $("#number-to-guess").text(targetNumber);
 
-  // reset the counter
-  counter=0;
-  $("#count").html("Your Count Is At: " + counter);
+    // reset the counter
+    counter=0;
+    $("#count").html("Your Count Is At: " + counter);
   
-  // This implicitly work on all crystal-imag classes
-  $(".crystal-image").attr("data-crystalvalue", "")
+    // This implicitly works on all crystal-imag classes
+    $(".crystal-image").attr("data-crystalvalue", "")
 
-}
-
+  }
+ });
