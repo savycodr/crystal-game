@@ -15,6 +15,8 @@ In this game, a random target number is assigned. The player's goal is to reach 
 
 * The application generates a random number between 19-120 for the target number. It  genertates a random number between 1-12 for each crystal value.
 
+* Utilizes a reset.css from Eric A. Meyer (meyerweb) to reset all CSS to a baseline. This was done to make the webpage look the same across all web browsers.
+
 * This game is mobile responsive. It is fun to play on your phone or tablet.
 
 ### Credits
