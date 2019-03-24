@@ -34,7 +34,7 @@ $(document).ready(function()
     // If the number is 11, then users can win. (11 + 11 + 11 + 11 + 11 = 55)
     // If the number is 10, then there is no way for the user to win. (10 + 10 + 10 + 10 + 10 = 60)
     counter += parseInt(crystalValue);
-    $("#count").html("Your Count Is At: " + counter);
+    $("#count").html("Your Count Is: " + counter);
 
     // Here we created some logic to "check" if the click counter matches the targetNumber.
     // Remember, this click event will be triggered with each click.
@@ -68,7 +68,7 @@ $(document).ready(function()
 
     // reset the counter
     counter=0;
-    $("#count").html("Your Count Is At: " + counter);
+    $("#count").html("Your Count Is: " + counter);
   
     // This implicitly works on all crystal-imag classes
     $(".crystal-image").attr("data-crystalvalue", "")
